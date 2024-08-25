@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- <a href="www.google.com.br" target="_blank"></a> -->
+    <!-- _blank serve para abrir a pagina em outra aba -->
+    <!-- google.com.br#nomedoid vai para alguma parte especifica da página -->
+
+    <nav class="navbar">
+        <img class="nav-logo" src="img/icon.png" alt="logo coraline">
+        <ul class="nav-ul">
+            <li><a class="nav-a" href="index.html">Home</a></li>
+            <li><a class="nav-a" href="#">Formação Academica</a></li>
+            <li><a class="nav-a" href="#">Experiencias</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div>
+            <h1 class="f1">Media Queries</h1>
+            <h2 class="f2">@media(min-width:768px)</h2>
+        </div>
+    </header>
+    <main class="container">
+
+        <section>
+            <div class="div-texto">
+                <h2 class="titulos">O que são Medias Queries?</h2>
+                <p class="texto"><span>M</span>edia query, nada mais é do que uma estrutura do CSS que permite aplicar estilizações
+                    especificas para uma página web de acordo com certas condições, fazendo assim com esta página possa
+                    se adequar ao layout de tela em diferentes tamanhos e tipos de mídia. A sintaxe básica ao
+                    utilizarmos media query é a seguinte:
+                </p>
+
+                <pre>
+                    <code>
+                        <em class="texto">@media (condição) { 
+                            /* Estilizações CSS */
+                  }</em>
+                    </code>
+                </pre>
+
+                <p class="texto"><span>D</span>evemos utlizar a propriedade screen para monitores ou outros dispositivos como
+                    computadores, tablets e smartphones com telas coloridas e com resolução adequada.</p>
+                <pre>
+                    <code>
+                        <em class="texto">@media screen and (max-width: 768px){
+                            /* Estilizações CSS */
+                    }</em>
+                    </code>
+                </pre>
+
+            </div>
+            <div class="div-texto">
+                <h2 class="titulos">Exercício</h2>
+                <p class="texto"><span>N</span>este exercício vamos trabalhar esta página em três layouts diferente, você aluno deverá
+                    observar os wireframes e tentar executar os três layouts, sendo o primeiro layout para desktop, o
+                    segundo layout para tablete e o último para celular. Para o tablet podemos ter como referência o
+                    tamanho máximo de 780px. E para o celular podemos ter como referência o tamanho máximo de 560px.
+                </p>
+            </div>
+            <div class="div-texto">
+                <h2 class="titulos">Imagens</h2>
+                <p class="texto"><span>V</span>amos utilizar imagens para deixar bem evidete a mundaça de layout.</p>
+            </div>
+        </section>
+
+        <section class="sec1">
+            <img class="sec1-imagem" src="img/ratitos.jpg" alt="">
+        </section>
+
+        <section class="sec2">
+            <img class="sec2-imagem" src="img/wybe.jpg" alt="">
+            <img class="sec2-imagem" src="img/outramami.png" alt="">
+            <img class="sec2-imagem" src="img/outropapi.png" alt="">
+            <img class="sec2-imagem" src="img/gatito.jpg" alt="">
+        </section>
+        <section class="sec2">
+            <img class="sec3-imagem" src="img/velhas.jpg" alt="">
+            <img class="sec3-imagem" src="img/jardim.jpg" alt="">
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="nav-ul">
+            <li class="nav-a">Youtube</li>
+            <li class="nav-a">GitHub</li>
+            <li class="nav-a">Facebook</li>
+            <li class="nav-a">Twitter</li>
+            <li class="nav-a">Instagram</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

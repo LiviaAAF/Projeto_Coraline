@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root{
+    --azul-escuro: #0d2c49;
+    --rosa-claro: #ddcab7;
+    --marrom: #786343;
+    --amarelo: #c7a40e;
+    --amarelo-claro: #d8c615;
+}
+
+.navbar{
+    background-color: var(--azul-escuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+.nav-logo{
+    width: 40px;
+    border-radius: 50%;
+}
+.nav-ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.nav-a{
+    color: var(--rosa-claro);
+    font-size: 18px;
+    text-decoration: none;
+}
+.nav-a:hover{
+    text-decoration: underline;
+}
+.header{
+    /* o vh ajusta conforme o tamanho da tela */
+    height: 80vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image: url(../img/coraline1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding: 0 10vw;
+}
+.f1{
+    color: var(--amarelo-claro);
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px var(--amarelo);
+}
+.f2{
+    color: white;
+    text-align: right;
+    font-size: 16px;
+    line-height: 0.5;
+}
+body{
+    background-color: var(--rosa-claro);
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.sec1-imagem{
+    width: 100%;
+}
+.sec2{
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.sec2-imagem{
+    margin: 10px 0;
+    width: 23%;
+}
+.sec3-imagem{
+    margin: 10px 0;
+    width: 48.5%;
+}
+/* mexe na imagem a partir de 830px */
+@media screen and (max-width:830px){
+    .header{
+        /* o vh ajusta conforme o tamanho da tela */
+        height: 80vh;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background-image: url(../img/coraline1.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        padding: 0 10vw;
+    }
+
+    .sec2-imagem{
+        margin: 10px 0;
+        width: 23%;
+    }
+    .sec3-imagem{
+        margin: 10px 0;
+        width: 48.5%;
+    }
+}
+
+.titulos{
+    font-size: 30px;
+    border-bottom: 2px solid var(--azul-escuro);
+    font-style: italic;
+}
+.div-texto{
+    margin: 50px 0;
+}
+span{
+    font-weight: bold;
+    color: var(--azul-escuro);
+    font-size: 40px;
+}
+.texto{
+    font-size: 20px;
+}
+.footer{
+    background-color: var(--azul-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+}
